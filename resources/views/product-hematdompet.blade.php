@@ -1,0 +1,20 @@
+@extends('layouts.mainlayout')
+<?php 
+$title = "Hemat Dompet"
+?>
+@section('title-mainpage')
+    <i class="fa-solid fa-wallet"></i> HEMAT DOMPET
+@endsection
+
+@section('card-appearance')
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        swal({
+            title: "Fitur masih dalam tahap pengembangan!",
+            text: "Klik OK untuk kembali ke Dashboard",
+            icon: "info",
+        }).then(function() {
+            window.location.href = "/";
+        });
+    </script>
+@endsection
